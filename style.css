@@ -1,0 +1,52 @@
+
+h1 
+{
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+#id-selector-demo
+{
+    color: green;
+}
+body
+{
+    color: white;
+    background-color:#292b45;
+}
+img
+{
+    width: 60%;
+    border: 15px solid red;
+    border-radius: 1000px;
+}
+*{
+    text-align: center;
+}
+.playernamecolor
+{
+    color: cyan;
+}
+.bordered-link {
+    border: 5px solid red;
+    border-radius: 1000px;
+    padding: 5px;
+    text-decoration: none;
+    color: aqua;
+    background-color: red;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #45a049;
+}
