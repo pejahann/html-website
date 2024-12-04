@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honorable Mentions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Honorable Mentions</h1>
+        </div>
+    </header>
+    <main>
+        <section class="players">
+            <!-- Player 1 -->
+            <div class="player">
+                <div class="card">
+                    <img src="Images/SAKSA.jpg" alt="Saksa">
+                    <h2>Saksa</h2>
+                    <p>TI10 Champion, renowned for his precise support play, versatile hero pool, and clutch performances under pressure.</p>
+                </div>
+            </div>
+        </a>
+            <!-- Player 2 -->
+            <div class="player">
+                <div class="card">
+                    <img src="Images/PUPPEY.jpg" alt="Puppey">
+                    <h2>Puppey</h2>
+                    <p>TI1 Champion and legendary captain, known for his strategic brilliance, unmatched consistency, and leadership across every TI.</p>
+                </div>
+            </div>
+            <!-- Player 3 -->
+            <div class="player">
+                <div class="card">
+                    <img src="Images/PURE.jpg" alt="Pure">
+                    <h2>Pure</h2>
+                    <p>Rising star known for his exceptional carry performances, diverse hero pool, and ability to dominate the late game.</p>
+                </div>
+            </div>
+            <!-- Player 4 -->
+            <div class="player">
+                <div class="card">
+                    <img src="Images/33.jpg" alt="33">
+                    <h2>33</h2>
+                    <p>TI11 and TI13 Champion, celebrated for his innovative offlane strategies, deep hero mastery, and game-changing utility plays.</p>
+                </div>
+            </div>
+            <!-- Player 5 -->
+            <div class="player">
+                <div class="card">
+                    <img src="Images/NISHA.jpg" alt="Nisha">
+                    <h2>Nisha</h2>
+                    <p>TI13 Champion, Elite midlaner, renowned for his mechanical skill, game sense, and consistent dominance in high-stakes matches.</p>
+                </div>
+            </div>
+            
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created with ❤️ for Dota 2 fans worldwide.</p>
+        <center>
+            <a href="dota.html" class="btn">Back</a> 
+        </center>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".card");
+            cards.forEach(card => {
+                card.addEventListener("mouseenter", () => {
+                    card.style.transform = "scale(1.05)";
+                });
+                card.addEventListener("mouseleave", () => {
+                    card.style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
