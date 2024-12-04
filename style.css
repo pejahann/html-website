@@ -1,52 +1,113 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0e1217;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-h1 
-{
-    font-weight: bold;
+header .hero {
+  text-align: center;
+  padding: 3em 1em;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
-h3{
-    font-weight: bold;
+
+header .hero h1 {
+  font-size: 3em;
+  margin: 0;
 }
-#id-selector-demo
-{
-    color: green;
+
+header .hero p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
 }
-body
-{
-    color: white;
-    background-color:#292b45;
+
+main {
+  padding: 2em;
+  background: url('DOTA.jpg') center center/cover no-repeat; /* Dota 2 logo as background */
+  background-size: cover; /* Ensures the logo fills the background */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  height: 100%; /* Full height for the main content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-img
-{
-    width: 60%;
-    border: 15px solid red;
-    border-radius: 1000px;
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  z-index: 1; /* Ensures player cards are in front of the background */
 }
-*{
-    text-align: center;
+
+.player .card {
+  background: rgba(26, 29, 35, 0.8); /* Semi-transparent background for cards */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.playernamecolor
-{
-    color: cyan;
+
+.player .card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  transform: translateY(-5px);
 }
-.bordered-link {
-    border: 5px solid red;
-    border-radius: 1000px;
-    padding: 5px;
+
+.card img {
+  width: 100%;           /* Fill the card's width */
+  height: 250px;         /* Set a consistent height */
+  object-fit: cover;     /* Scale and crop images to fill the container */
+  display: block;        /* Removes inline image gaps */
+  border-bottom: 2px solid #00bcd4; /* Visual separation */
+}
+
+.card h2 {
+  margin: 0.8em 0 0.5em;
+  text-align: center;
+  color: #00bcd4;
+}
+
+.card p {
+  padding: 0 1em 1em;
+  text-align: center;
+  font-size: 0.9em;
+  color: #b0bec5;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #1a1d23;
+  color: #00bcd4;
+}
+.grid-container {
+    display: grid;
+    place-items: center; /* Centers content both horizontally and vertically */
+    height: 100vh;       /* Ensures the container takes the full height of the viewport */
+}
+
+.clickable-link {
+    color: #00bcd4;
     text-decoration: none;
-    color: aqua;
-    background-color: red;
+    font-size: 1.2em;
+}
+
+.clickable-link:hover {
+    color: #ff9800;
 }
 .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-.btn:hover {
-    background-color: #45a049;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s;
 }

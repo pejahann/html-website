@@ -3,18 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
-    <title>Welcome to My Website</title>
-</head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(Images/DOTA1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
 
+        .container {
+            text-align: center;
+            max-width: 700px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.9);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .link {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
 <body>
     <div class="container">
         <h1>Welcome to My Website!</h1>
         <p>Hi! I'm thrilled to have you here. This website is a place where I share my personal projects, ideas, and a bit about myself. 
            Feel free to explore, and if you want to know about my personal details, go check out the "About Me" section for my personal informations and dive into my list of the "Top 10 Dota 2 Players" to see my picks for the best in the game.</p>
         
-        <a href="project.html" class="link">Top 10 Dota 2 Players</a>
+        <a href="dota.html" class="link">Best Dota 2 Players</a>
         <a href="about.html" class="link">About Me</a>
         
     </div>
